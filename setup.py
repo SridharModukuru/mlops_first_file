@@ -7,7 +7,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 __version__ = "0.0.4"
 REPO_NAME = "mlops_first_file"
-PKG_NAME= "databaseautomation"
+PKG_NAME= "databaseautomationbysridhar"
 AUTHOR_USER_NAME = "SridharModukuru"
 AUTHOR_EMAIL = "sridharmodukuru@gmail.com"
 
@@ -25,4 +25,5 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    install_requires = get_requirement("./requirements_dev.txt")
     )
